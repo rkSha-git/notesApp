@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row-reverse;
+    background: #8dd815;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background: url('img.jpg') no-repeat center center/cover;
+}
+
+#container{
+    flex:1;
+    padding: 40px;
+    padding-left:80px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#notes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2{
+    font-size: 48px;
+    color: #00470c;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 20px 40px;
+    background-color: #578907;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 1rem #000;
+}
+
+button:hover{
+    background-color: #0c7506;
+}
+
+#notes div{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: row;
+    position: relative;
+}
+
+textarea{
+    width:200px;
+    height: 80px;
+    border-radius: 3px;
+    border: none;
+    padding:10px;
+    padding-bottom: 20px;
+    background-color: #639b07;
+    font-size: 18px;
+    color: white;
+    border-bottom: 30px solid rgb(1, 61, 1);
+    box-shadow: inset 0.5px 0.5px 1rem #000;
+}
+
+#notes div span{
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    right: 15px;
+    font-size: 18px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;   
+
+}
+
+#notes div span:hover{
+    transform: rotate(5deg);
+    background-color: #00000030;
+}
+
+#notes div i{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    font-size: 20px;
+    padding: 2px;
+    cursor: pointer;  
+    border-radius: 50%;
+    border: none;
+}
+
+#notes div i:hover{
+    transform: rotate(5deg);
+    background-color: #00000030;
+}
+
+#image{
+    flex: 2;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+}
+
+#image h1{
+    font-size: 220px;  
+    box-shadow:inset 1px 1px 30px black;  
+    padding:20px 30px;
+    border-radius: 5px;
+    padding-top:0;
+}
